@@ -2,8 +2,8 @@
 
 // Módulos.
 import Image from "next/image";
-import Link from "next/link";
-import {  FaPersonShelter } from "react-icons/fa6";
+import { FaPersonShelter } from "react-icons/fa6";
+import CardMor from "./CardMor";
 
 interface PropsCardHead {
   image: string;
@@ -21,7 +21,10 @@ export default function CardSobre({
   botao,
 }: PropsCardHead) {
   return (
-    <div className="relative w-full h-[50vh] lg:h-[90vh] flex items-center justify-end overflow-hidden ">
+    <section
+      className="relative w-full h-[50vh] lg:h-[90vh] flex items-center justify-end overflow-hidden"
+      aria-labelledby="section-title"
+    >
       {/* Imagem de fundo fixa */}
       <Image
         src={image}
@@ -30,67 +33,65 @@ export default function CardSobre({
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         quality={100}
         className="absolute object-cover"
+        aria-hidden="true"
       />
 
-      {/* Degradê da direita para a esquerda */}
-      <div className="absolute inset-0 bg-gradient-to-l from-[#003347e0] via-[#0033478c] via-50% to-transparent"></div>
+      {/* Degradê visual */}
+      <div
+        className="absolute inset-0 bg-gradient-to-l from-[#003347e0] via-[#0033478c] via-50% to-transparent"
+        aria-hidden="true"
+      ></div>
 
-      {/* Conteúdo (textos e botões) alinhado à direita */}
-      <div className="flex justify-around items-center">
-        <div className="hidden lg:block z-10 text-textoPrincipal space-y-4">
-          {/* <Image src="/Shangrilá__1.png" alt="Logo Marca" width={600} height={500}/> */}
+      <div className="flex justify-around items-center w-full">
+        {/* Conteúdo visual esquerdo */}
+        <div
+          className="hidden lg:block z-10 text-textoPrincipal space-y-4"
+          aria-hidden="true"
+        >
           <div className="w-full flex flex-col">
             <div className="flex gap-3">
-            <h1 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-6xl ">
-              Shangrila
-            </h1>
-            <div >
-              <h2
-                className="
-                 text-3xl text-textoPrincipal font-pacifico md:text-2xl lg:text-6xl 
-                 text-[var(--letra3-cor)]  "
-              >
-                Residencial
+              <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-6xl">
+                Shangrila
               </h2>
-              <p className=" text-base lg:text-base text-principal2">
-                CUIDANDO DE SUA FAMÌLIA
-              </p>
-            </div>
+              <div>
+                <h3
+                  className="text-3xl text-textoPrincipal font-pacifico md:text-2xl lg:text-6xl"
+                  style={{ color: "var(--letra3-cor)" }}
+                >
+                  Residencial
+                </h3>
+                <p className="text-base lg:text-base text-principal2">
+                  CUIDANDO DE SUA FAMÍLIA
+                </p>
+              </div>
             </div>
           </div>
-
           <FaPersonShelter
             size={180}
-            className=" text-textoPrincipal m-auto hover:scale-110"
+            className="text-textoPrincipal m-auto hover:scale-110"
+            role="img"
+            aria-label="Ícone representando cuidado residencial"
           />
-          <div className=" w-[40%] h-6 bg-white rounded-2xl m-auto"></div>
+          <div
+            className="w-[40%] h-6 bg-white rounded-2xl m-auto"
+            aria-hidden="true"
+          ></div>
         </div>
+
+        {/* Conteúdo principal textual */}
         <div className="relative z-10 text-textoPrincipal text-justify px-2 lg:px-12 w-full lg:max-w-[50%]">
-          <h1 className="text-4xl md:text-3xl lg:text-3xl font-bold font-pacifico text-center">
+          <h1
+            id="section-title"
+            className="text-4xl md:text-3xl lg:text-3xl font-bold font-pacifico text-center"
+          >
             {texto}
           </h1>
-          <p className="text-lg md:text-base  mt-4">{descrição}</p>
+          <p className="text-lg md:text-base mt-4">{descrição}</p>
           <p className="hidden md:block">{textHidden}</p>
 
-          {/* Botões */}
-          {!botao && (
-            <div className="flex justify-center lg:justify-start gap-6 mt-6 ">
-              <Link
-                href="/contato"
-                className="px-6 py-3 bg-principal2 rounded-full font-semibold hover:bg-textoPrincipal hover:text-principal transition"
-              >
-                Agende um horário
-              </Link>
-              <Link
-                href="/sobre"
-                className="px-6 py-3 bg-principal2 rounded-full font-semibold hover:bg-textoPrincipal hover:text-principal transition"
-              >
-                Saiba mais
-              </Link>
-            </div>
-          )}
+          {!botao && <CardMor sty="mt-4" />}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
