@@ -20,6 +20,7 @@ export default function CardInfo({
   btn,
   extend,
 }: PropsCardInfo) {
+  
   const [showText, setShowTest] = useState(false);
 
   return (

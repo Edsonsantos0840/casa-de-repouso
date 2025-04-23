@@ -40,7 +40,7 @@ export default function CardContact({
 
       {/* Conteúdo (textos e botões) alinhado à direita */}
       <div className="md:flex w-full pb-4">
-        <div className="relative z-10 text-textoPrincipal drop-shadow-xl text-justify px-6 lg:px-12 w-full lg:max-w-[50%] mt-3">
+        <div className="relative z-10 mb-6 text-textoPrincipal drop-shadow-xl text-justify px-6 lg:px-12 w-full lg:max-w-[50%] mt-3">
           <h2
             id="contact-card-title"
             className="text-3xl md:text-[1.6rem] lg:text-3xl font-bold font-pacifico"

@@ -39,9 +39,9 @@ function NavBar() {
         </button>
 
         {/* Menu de navegação (visível direto no desktop, toggle no mobile) */}
-        <nav className={`absolute lg:static top-full left-0 w-full lg:w-auto bg-textos2 lg:bg-transparent transition-all duration-300 ease-in-out
+        <nav className={`absolute lg:static top-full left-0 w-full lg:w-auto bg-[#ffffffeb]  lg:bg-transparent transition-all duration-300 ease-in-out
           ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:space-x-4`}>
-          <ul className="flex flex-col lg:flex-row lg:gap-4 p-4 lg:p-0">
+          <ul className="flex flex-col items-center lg:flex-row lg:gap-4 p-4 lg:p-0">
             {sections.map((link) => (
               <li key={link}>
                 <Link

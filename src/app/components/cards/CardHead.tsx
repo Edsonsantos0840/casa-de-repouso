@@ -1,9 +1,8 @@
 "use client";
 //Módulos.
 import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
 import CardMor from "./CardMor";
+import useSlide from "../../hooks/useSlide";
 
 interface PropsCardHead {
   images?: string[];
@@ -14,15 +13,8 @@ interface PropsCardHead {
 }
 
 export default function CardHead(props: PropsCardHead) {
-  const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % props.images.length);
-    }, 5000); // Troca a cada 5 segundos
-
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-  }, [props.images.length]);
+const index = useSlide(props)
 
   return (
     <section
