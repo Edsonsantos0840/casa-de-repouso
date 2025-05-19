@@ -132,7 +132,7 @@ export default function Home() {
         <CardSobre
           image={images[3]}
           texto="Quem Somos."
-          descrição="Há mais de 20 anos, a Casa de Repouso Shangrilá se dedica a oferecer cuidado, conforto e qualidade de vida para idosos. Com duas unidades especialmente planejadas para atender às necessidades dos nossos residentes, proporcionamos um ambiente acolhedor, seguro e repleto de carinho.
+          descrição="Há mais 8 anos, a Casa de Repouso Shangri-lá se dedica a oferecer cuidado, conforto e qualidade de vida para idosos. Com duas unidades especialmente planejadas para atender às necessidades dos nossos residentes, proporcionamos um ambiente acolhedor, seguro e repleto de carinho.
         "
           textHidden=" 
          Nossa missão é garantir bem-estar, dignidade e atenção personalizada para cada idoso, sempre respeitando sua individualidade e promovendo um convívio harmonioso. Contamos com uma equipe de profissionais altamente qualificados, incluindo cuidadores, enfermeiros e especialistas em saúde e bem-estar, para assegurar que cada residente receba o melhor atendimento possível.
@@ -167,7 +167,7 @@ export default function Home() {
                 aria-label="Ícone de marcador de localização"
               />
               <p className="lg:max-w-[800px] text-lg text-principal mb-4 text-justify px-2">
-                Na Shangrilá Residencial para Idosos, oferecemos um ambiente
+                Na Shangri-lá Residencial para Idosos, oferecemos um ambiente
                 acolhedor, seguro e repleto de afeto para nossos residentes. Com
                 duas unidades modernas e equipadas, garantimos o cuidado que
                 cada idoso merece, com atenção individualizada e estrutura
@@ -187,7 +187,7 @@ export default function Home() {
         <CardContact
           image={images[2]}
           texto="Agende Uma Visita."
-          descrição="A Casa de Repouso Shangrilá se dedica a oferecer cuidado, conforto e qualidade de vida para idosos. Com duas unidades especialmente planejadas para atender às necessidades dos nossos residentes.
+          descrição="A Casa de Repouso Shangri-lá se dedica a oferecer cuidado, conforto e qualidade de vida para idosos. Com duas unidades especialmente planejadas para atender às necessidades dos nossos residentes.
          "
         />
       </section>

@@ -21,7 +21,7 @@ function NavBar() {
         {/* Logo */}
         <div className="flex gap-1 w-[30%]">
           <h1 className="text-3xl text-principal font-pacifico md:text-2xl lg:text-3xl">
-            Shangrila
+            Shangri-lá
           </h1>
           <div>
             <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-3xl">
