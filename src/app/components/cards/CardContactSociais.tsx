@@ -1,17 +1,10 @@
 import Link from "next/link";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTiktok,
-  FaWhatsapp,
-} from "react-icons/fa6";
 import { fieldSocials } from "../fields/FieldsSocials";
 
 export default function CardContactSociais({ sty }: { sty: string }) {
   return (
     <section
-      className="md:mt-10 lg:-mt-4"
+      className="md:mt-10 lg:-my-auto"
       aria-labelledby="redes-sociais-title"
     >
       <h2 id="redes-sociais-title" className="text-xl font-semibold mb-3">
