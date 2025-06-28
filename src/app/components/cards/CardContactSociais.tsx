@@ -4,14 +4,14 @@ import { fieldSocials } from "../fields/FieldsSocials";
 export default function CardContactSociais({ sty }: { sty: string }) {
   return (
     <section
-      className="md:mt-10 lg:-my-auto"
+      className={sty}
       aria-labelledby="redes-sociais-title"
     >
-      <h2 id="redes-sociais-title" className="text-xl font-semibold mb-3">
+      <h2 id="redes-sociais-title" className="text-xl font-semibold my-3">
         Redes Sociais
       </h2>
       <nav
-        className={`flex gap-4 ${sty}`}
+        className={`flex gap-4 mb-4 ${sty}`}
         aria-label="Links para redes sociais"
       >
         {fieldSocials.map((item, i) => (

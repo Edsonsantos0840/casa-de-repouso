@@ -22,7 +22,7 @@ export default function CardSobre({
 }: PropsCardHead) {
   return (
     <section
-      className="relative w-full h-[50vh] lg:h-[90vh] flex items-center justify-end overflow-hidden"
+      className="relative w-full h-[60vh] lg:h-[100vh] flex items-center justify-end "
       aria-labelledby="section-title"
     >
       {/* Imagem de fundo fixa */}
