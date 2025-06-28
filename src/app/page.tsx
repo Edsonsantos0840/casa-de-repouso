@@ -16,6 +16,41 @@ import CardImage2 from "./components/cards/CardImage2";
 import CardAdress from "./components/cards/CardAdress";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
+// ✅ Next.js Metadata API (Next 13+ / 15+)
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Casa de Repouso Shangrilá | Cuidado, Qualidade de Vida e Carinho",
+  description:
+    "A Casa de Repouso Shangrilá oferece cuidado, conforto e qualidade de vida para idosos. Unidades modernas, equipe especializada e ambiente familiar acolhedor.",
+  keywords: [
+    "Casa de Repouso",
+    "Residencial para Idosos",
+    "Idosos",
+    "Cuidados Geriátricos",
+    "Cuidadores",
+    "Enfermagem",
+    "Qualidade de Vida",
+    "Shangrilá",
+    "Lar para Idosos",
+    "Envelhecimento Ativo",
+  ],
+  metadataBase: new URL("https://shangrila-casa-de-repouso.vercel.app/"),
+  openGraph: {
+    title: "Casa de Repouso Shangrilá",
+    description:
+      "Ambiente acolhedor, seguro e repleto de afeto. Cuidado humanizado para idosos com equipe multidisciplinar 24h.",
+    url: "https://shangrila-casa-de-repouso.vercel.app/",
+    siteName: "Shangrilá Residencial para Idosos",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function Home() {
   return (
     <div id="Início" className="w-full flex flex-col px-1 ">
@@ -160,18 +195,23 @@ export default function Home() {
 
           <div className="lg:flex justify-around items-center gap-8 mt-6">
             <div className="text-center lg:text-left">
-              <FaMapMarkerAlt
-                size={40}
-                className="my-8 text-principal m-auto"
-                role="img"
-                aria-label="Ícone de marcador de localização"
-              />
-              <p className="lg:max-w-[800px] text-lg text-principal mb-4 text-justify px-2">
-                Na Shangri-lá Residencial para Idosos, oferecemos um ambiente
-                acolhedor, seguro e repleto de afeto para nossos residentes. Com
-                duas unidades modernas e equipadas, garantimos o cuidado que
-                cada idoso merece, com atenção individualizada e estrutura
-                completa.
+              <p className="lg:max-w-[800px] text-lg text-principal mb-4 text-justify p-1">
+                Na Shangri-lá Residencial para Idosos, oferecemos muito mais do
+                que um espaço físico — proporcionamos um lar acolhedor,
+                planejado para garantir conforto, segurança e bem-estar a cada
+                residente. Nossas duas unidades modernas foram projetadas para
+                atender todas as necessidades dos idosos, com ambientes amplos,
+                adaptados, acessíveis e equipados com tudo o que é necessário
+                para um dia a dia tranquilo e seguro. A equipe multidisciplinar
+                está sempre presente, composta por cuidadores experientes,
+                profissionais que trabalham juntos para promover a saúde física,
+                emocional e social de cada morador. Oferecemos uma rotina ativa 
+                com atividades planejadas
+                para estimular a autonomia, fortalecer vínculos de amizade e
+                manter o corpo e a mente em movimento. Acreditamos que cada fase
+                da vida merece ser vivida com dignidade, por isso cuidamos de
+                cada detalhe para que os idosos se sintam protegidos,
+                respeitados e, acima de tudo, felizes.
               </p>
             </div>
 
@@ -180,10 +220,7 @@ export default function Home() {
         </section>
       </Container>
       {/* seção contato */}
-      <section 
-        id="Contato"
-        aria-labelledby="contatos-title"
-      >
+      <section id="Contato" aria-labelledby="contatos-title">
         <CardContact
           image={images[2]}
           texto="Agende Uma Visita."

@@ -54,7 +54,7 @@ export default function CardContact({
             <div className="flex flex-col justify-start gap-6 mt-6 lg:mt-3">
               <CardContactAdress />
               {/* Seção de Redes Sociais */}
-              <CardContactSociais />
+              <CardContactSociais sty='text-4xl ' />
               <CardMor />
             </div>
           )}

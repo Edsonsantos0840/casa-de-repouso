@@ -6,7 +6,36 @@ interface FieldsInfoMorProps {
   btn: string;
   extend?: boolean;
 }
-export const ImageFront: string [] = ["/image/shangrilafrente1.jpg", "/image/shangrilafrente2.jpg", "/image/shangrilafrente3.jpg", "/image/shangrilafrente4.jpg", "/image/shangrilacasa.jpg", "/image/shangrilafrente5.jpg", "/image/shangrilacasa2.jpg"]
+export const ImageFront: string[] = [
+  "/image/shangrilafrente1.jpg",
+  "/image/shangrilafrente2.jpg",
+  "/image/shangrilafrente3.jpg",
+  "/image/shangrilafrente4.jpg",
+  "/image/shangrilacasa.jpg",
+  "/image/shangrilafrente5.jpg",
+  "/image/shangrilacasa2.jpg",
+  "/image/Shangrilá.JPG",
+  "/image/Shangrila2.JPG",
+  "/image/Shangrila3.JPG",
+  "/image/Shangrila4.JPG",
+  "/image/Shangrila5.JPG",
+  "/image/Shangrila7.JPG",
+  "/image/Shangrila10.JPG",
+  "/image/Shangrila11.JPG",
+  "/image/Shangrila8.jpg",
+  "/image/Shangrila12.jpg",
+  "/image/Shangrila17.jpg",
+  "/image/Shangrila18.jpg",
+  "/image/Shangrila21.jpg",
+  "/image/Shangrila22.jpg",
+  "/image/Shangrila23.jpg",
+  "/image/Shangrila24.jpg",
+  "/image/Shangrila25.jpg",
+  "/image/Shangrila26.jpg",
+  "/image/Shangrila27.jpg",
+  "/image/Shangrila28.jpg",
+ 
+];
 
 export const fieldInfMor: FieldsInfoMorProps[] = [
   {
@@ -39,5 +68,4 @@ export const fieldInfMor: FieldsInfoMorProps[] = [
     btn: "Ler",
     extend: true,
   },
-
 ];
