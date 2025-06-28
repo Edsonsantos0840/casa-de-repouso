@@ -102,6 +102,3 @@ Desenvolvido com ❤️ para cuidar de quem mais precisa — Shangri-lá Residen
 
 ---
 
-### ⚡ **Pronto para usar**
-✔️ Basta salvar este conteúdo em um arquivo `README.md` na raiz do projeto.  
-✔️ Se quiser, posso gerar **versão em inglês** ou com badges e shields para GitHub! Quer? 🚀
