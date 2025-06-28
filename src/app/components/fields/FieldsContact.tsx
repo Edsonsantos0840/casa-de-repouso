@@ -1,12 +1,6 @@
 import { ReactElement } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import {
-  FaEnvelope,
-  FaInstagram,
-  FaLinkedin,
-  FaTiktok,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import {FaEnvelope} from "react-icons/fa6";
 
 interface FieldsContactProps {
   ico: ReactElement<any, any>;
