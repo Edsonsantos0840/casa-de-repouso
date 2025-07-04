@@ -14,7 +14,6 @@ import {
 import { fieldInfMor, ImageFront } from "./components/fields/FieldsInfoMor";
 import CardImage2 from "./components/cards/CardImage2";
 import CardAdress from "./components/cards/CardAdress";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 // ✅ Next.js Metadata API (Next 13+ / 15+)
 import type { Metadata } from "next";
@@ -35,6 +34,15 @@ export const metadata: Metadata = {
     "Lar para Idosos",
     "Envelhecimento Ativo",
   ],
+  authors: [
+    {
+      name: "Edson Santos",
+      url: "https://protifolio-eta.vercel.app",
+    },
+  ],
+  creator: "Edsson Sant",
+  publisher: "Edsson Santos",
+  
   metadataBase: new URL("https://shangrila-casa-de-repouso.vercel.app/"),
   openGraph: {
     title: "Casa de Repouso Shangrilá",
