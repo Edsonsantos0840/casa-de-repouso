@@ -34,29 +34,7 @@ export const metadata: Metadata = {
     "Lar para Idosos",
     "Envelhecimento Ativo",
   ],
-  authors: [
-    {
-      name: "Edson Santos",
-      url: "https://protifolio-eta.vercel.app",
-    },
-  ],
-  creator: "Edsson Sant",
-  publisher: "Edsson Santos",
-  
-  metadataBase: new URL("https://shangrila-casa-de-repouso.vercel.app/"),
-  openGraph: {
-    title: "Casa de Repouso Shangrilá",
-    description:
-      "Ambiente acolhedor, seguro e repleto de afeto. Cuidado humanizado para idosos com equipe multidisciplinar 24h.",
-    url: "https://shangrila-casa-de-repouso.vercel.app/",
-    siteName: "Shangrilá Residencial para Idosos",
-    locale: "pt_BR",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+
 };
 
 export default function Home() {
