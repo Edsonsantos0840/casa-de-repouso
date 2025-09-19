@@ -22,7 +22,7 @@ export default function Footer() {
           <p className="text-sm mt-2 hover:scale-105 hover:text-yellow-300">
             Desenvolvido por{" "}
             <Link
-              href="https://portifolio-beta-gules.vercel.app/"
+              href="https://protifolio-eta.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold"

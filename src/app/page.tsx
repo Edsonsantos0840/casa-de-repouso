@@ -48,7 +48,7 @@ export default function Home() {
       />
       <Container>
         {/* Seção Explicativa sobre Mármore, Granito e Ônix */}
-        <section id="Serviços" aria-labelledby="servicos-title" className="p-0">
+        <section id="Serviços" aria-labelledby="servicos-title" className="p-0 scroll-mt-20">
           <h2
             id="servicos-title"
             className="text-textos3 text-3xl md:text-4xl hidden md:flex justify-center my-2 md:my-10"
@@ -85,7 +85,7 @@ export default function Home() {
         id="Galeria"
         aria-labelledby="galeria-title"
         role="region"
-        className="bg-fundoProdduto2"
+        className="bg-fundoProdduto2 scroll-mt-20"
       >
         <Container>
           <h2
@@ -118,7 +118,7 @@ export default function Home() {
       <Container>
         <section
           id="Mais Sobre"
-          className="p-0"
+          className="p-0 scroll-mt-28"
           aria-labelledby="titulo-mais-sobre"
         >
           <h2
@@ -149,7 +149,7 @@ export default function Home() {
         </section>
       </Container>
       {/* seção sobre */}
-      <section id="Quem Somos" aria-labelledby="titulo-quem-somos">
+      <section id="Quem Somos" aria-labelledby="titulo-quem-somos" className="scroll-mt-20">
         <CardSobre
           image={images[3]}
           texto="Quem Somos."
@@ -166,7 +166,7 @@ export default function Home() {
         {/* Seção Nossos endereços */}
         <section
           id="Endereços"
-          className="px-1 lg:p-0 w-full"
+          className="px-1 lg:p-0 w-full scroll-mt-20"
           aria-labelledby="enderecos-title"
         >
           <header>
@@ -206,7 +206,7 @@ export default function Home() {
         </section>
       </Container>
       {/* seção contato */}
-      <section id="Contato" aria-labelledby="contatos-title">
+      <section id="Contato" aria-labelledby="contatos-title" className="scroll-mt-20">
         <CardContact
           image={images[2]}
           texto="Agende Uma Visita."
