@@ -19,15 +19,15 @@ function NavBar() {
     <aside className="fixed w-full z-20 bg-textos2 shadow-lg">
       <div className="max-w-[1200px] m-auto flex justify-between items-center py-2 px-4">
         {/* Logo */}
-        <div className="flex gap-1 w-[30%]">
-          <h1 className="text-3xl text-principal font-pacifico md:text-2xl lg:text-3xl">
+        <div className="flex gap-4 w-[100%] lg:w-[30%]">
+          <h1 className="text-4xl text-principal font-pacifico md:text-2xl lg:text-3xl">
             Shangri-lá
           </h1>
           <div>
-            <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-3xl">
+            <h2 className="text-4xl text-principal2 font-pacifico md:text-2xl lg:text-3xl">
               Residencial
             </h2>
-            <p className=" text-[.7rem] md:text-[.6rem] lg:text-xs text-principal">
+            <p className=" text-[.9rem] md:text-[.6rem] lg:text-xs text-principal">
               CUIDANDO DE SUA FAMÌLIA
             </p>
           </div>
@@ -46,7 +46,7 @@ function NavBar() {
               <li key={link}>
                 <Link
                   href={`#${link}`}
-                  className={`block text-lg p-2 rounded-lg transition ${
+                  className={`block text-xl p-2 rounded-lg transition ${
                     pathname === `${pathname}#${link}`
                       ? "bg-principal text-textoPrincipal font-bold"
                       : "text-principal hover:scale-105 hover:text-textoPrincipal hover:bg-principal"
