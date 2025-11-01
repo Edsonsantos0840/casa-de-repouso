@@ -21,7 +21,7 @@ export default function CardContactAdress() {
               className="flex items-center gap-2 hover:underline"
             >
               {item.ico}
-              <strong>{item.text2}</strong>{item.text}
+              {item.text2 && <strong>{item.text2}</strong>}{item.text}
             </Link>
           ))}
 

@@ -43,7 +43,7 @@ const index = useSlide(props)
 
       <div className="absolute bottom-0 left-0 w-full h-5/6 bg-gradient-to-t from-[#003347] to-transparent" />
 
-      <div className="relative z-10 text-textoPrincipal text-center px-2 md:px-6 lg:px-12">
+      <div className="relative z-10 text-textoPrincipal text-center px-1 md:px-6 lg:px-12">
         <h1 className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.5rem] font-bold font-pacifico md:-mb-9">
           {props.texto}
         </h1>

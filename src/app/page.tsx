@@ -179,9 +179,9 @@ export default function Home() {
             </h2>
           </header>
 
-          <div className="lg:flex justify-around items-center gap-8 mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
             <div className="text-center lg:text-left">
-              <p className="lg:max-w-[800px] text-lg text-principal mb-4 text-justify p-1">
+              <p className="text-lg text-principal mb-4 text-justify p-1">
                 Na Shangri-lá Residencial para Idosos, oferecemos muito mais do
                 que um espaço físico — proporcionamos um lar acolhedor,
                 planejado para garantir conforto, segurança e bem-estar a cada

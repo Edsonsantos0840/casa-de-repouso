@@ -19,15 +19,15 @@ function NavBar() {
     <aside className="fixed w-full z-20 bg-textos2 shadow-lg">
       <div className="max-w-[1200px] m-auto flex justify-between items-center py-2 px-4">
         {/* Logo */}
-        <div className="flex gap-4 w-[100%] lg:w-[30%]">
-          <h1 className="text-4xl text-principal font-pacifico md:text-2xl lg:text-3xl">
+        <div className="flex gap-4 lg:gap-1 w-[100%] lg:w-[30%]">
+          <h1 className="text-3xl text-principal font-pacifico md:text-2xl lg:text-3xl">
             Shangri-lá
           </h1>
           <div>
-            <h2 className="text-4xl text-principal2 font-pacifico md:text-2xl lg:text-3xl">
+            <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-3xl">
               Residencial
             </h2>
-            <p className=" text-[.9rem] md:text-[.6rem] lg:text-xs text-principal">
+            <p className="hidden  text-[.6rem] md:text-[.6rem] lg:text-xs text-principal">
               CUIDANDO DE SUA FAMÌLIA
             </p>
           </div>
@@ -40,13 +40,13 @@ function NavBar() {
 
         {/* Menu de navegação (visível direto no desktop, toggle no mobile) */}
         <nav className={`absolute lg:static top-full left-0 w-full lg:w-auto bg-[#ffffffeb]  lg:bg-transparent transition-all duration-300 ease-in-out
-          ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:space-x-4`}>
-          <ul className="flex flex-col items-center lg:flex-row lg:gap-4 p-4 lg:p-0">
+          ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:space-x-2`}>
+          <ul className="flex flex-col items-center lg:flex-row lg:gap-2 p-4 lg:p-0">
             {sections.map((link) => (
               <li key={link}>
                 <Link
                   href={`#${link}`}
-                  className={`block text-xl p-2 rounded-lg transition ${
+                  className={`block text-xl lg:text-lg p-2 rounded-lg transition ${
                     pathname === `${pathname}#${link}`
                       ? "bg-principal text-textoPrincipal font-bold"
                       : "text-principal hover:scale-105 hover:text-textoPrincipal hover:bg-principal"
