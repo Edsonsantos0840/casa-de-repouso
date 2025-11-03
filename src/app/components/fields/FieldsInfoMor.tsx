@@ -62,7 +62,7 @@ export const fieldInfMor: FieldsInfoMorProps[] = [
     image: "/image/shangrilaAtividades.jpg",
     title: "Atividades físicas",
     paragraph:
-      "Na Shangrilá Residencial para Idosos, acreditamos que o envelhecimento pode (e deve!) ser ativo, alegre e estimulante.",
+      "Na Shangrilá Residencial para Idosos, acreditamos que o envelhecimento deve ser ativo, alegre e estimulante.",
     textHidden:
       "Uma programação de atividades físicas, como alongamento, caminhadas assistidas e exercícios adaptados, promovendo mobilidade, equilíbrio e bem-estar.",
     btn: "Ler",

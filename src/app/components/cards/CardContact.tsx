@@ -22,7 +22,7 @@ export default function CardContact({
 }: PropsCardHead) {
   return (
     <section
-      className="relative w-full md:h-[50vh] lg:h-[100vh] flex items-center lg:justify-end "
+      className="relative w-full h-auto  p-4 "
       aria-labelledby="contact-card-title"
     >
       {/* Imagem de fundo fixa */}
@@ -39,8 +39,8 @@ export default function CardContact({
       <div className="absolute inset-0 bg-gradient-to-l from-[#003347] via-[#003347a6] via-100% to-transparent"></div>
 
       {/* Conteúdo (textos e botões) alinhado à direita */}
-      <div className="md:flex w-full ">
-        <div className="relative z-10  text-textoPrincipal drop-shadow-xl text-justify px-2 lg:px-10 w-full lg:max-w-[50%] space-y-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
+        <div className="relative z-10  text-textoPrincipal drop-shadow-xl text-justify px-2 w-full  space-y-6 md:space-y-10 lg:space-y-3">
           <h2
             id="contact-card-title"
             className="text-3xl md:text-[1.6rem] lg:text-3xl font-bold font-pacifico"
@@ -51,7 +51,7 @@ export default function CardContact({
 
           {/* Botões */}
           {!botao && (
-            <div className="flex flex-col justify-start  ">
+            <div className="space-y-6 md:space-y-10 lg:space-y-5">
               <CardContactAdress />
               {/* Seção de Redes Sociais */}
               <CardContactSociais sty='text-4xl' />

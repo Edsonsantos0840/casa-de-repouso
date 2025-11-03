@@ -11,7 +11,7 @@ export default function CardContactSociais({ sty }: { sty: string }) {
         Redes Sociais
       </h2>
       <nav
-        className={`flex gap-4 mb-4 ${sty}`}
+        className={`flex gap-4  ${sty}`}
         aria-label="Links para redes sociais"
       >
         {fieldSocials.map((item, i) => (

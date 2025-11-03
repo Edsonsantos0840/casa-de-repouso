@@ -4,17 +4,17 @@ import CardContactSociais from "../cards/CardContactSociais";
 
 export default function Footer() {
   return (
-    <footer className="relative inset-0 bg-gradient-to-l from-[#091b22] via-[#002b3b] to-[#091b22] text-white py-14 px-6 animate-fadeIn">
-      <div className="relative container mx-auto flex flex-col lg:grid lg:grid-cols-3 gap-8 text-left lg:text-center  ">
+    <footer className="relative inset-0 bg-gradient-to-l from-[#091b22] via-[#002b3b] to-[#091b22] text-white py-2 px-6 lg:p-2 animate-fadeIn">
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[39%_28%_33%] gap-4 lg:gap-2  text-left lg:text-center md:items-center">
         {/* Seção de Endereço */}
         <CardContactAdress />
 
         {/* Seção de Redes Sociais */}
-        <CardContactSociais sty='justify-center text-5xl  items-center' />
+        <CardContactSociais sty='text-5xl  items-center' />
 
         {/* Seção de Créditos */}
         <section>
-          <h2 className="text-xl font-semibold mb-3">Créditos</h2>
+          <h2 className="text-xl font-semibold my-3">Créditos</h2>
           <p>
             © {new Date().getFullYear()} Shangrilá. Todos os direitos
             reservados.

@@ -22,7 +22,7 @@ export default function CardSobre({
 }: PropsCardHead) {
   return (
     <section
-      className="relative w-full h-[60vh] lg:h-[100vh] flex items-center justify-end "
+      className="relative w-full h-auto py-2 flex items-center justify-end "
       aria-labelledby="section-title"
     >
       {/* Imagem de fundo fixa */}
@@ -38,24 +38,24 @@ export default function CardSobre({
 
       {/* Degradê visual */}
       <div
-        className="absolute inset-0 bg-gradient-to-l from-[#003347e0] via-[#0033478c] via-50% to-transparent"
+        className="absolute inset-0 bg-gradient-to-l from-[#003347e0] via-[#0033478c] via-50% to-[#003347e0]"
         aria-hidden="true"
       ></div>
 
-      <div className="flex justify-around items-center w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center w-full">
         {/* Conteúdo visual esquerdo */}
         <div
           className="hidden lg:block z-10 text-textoPrincipal space-y-4"
           aria-hidden="true"
         >
           <div className="w-full flex flex-col">
-            <div className="flex gap-3">
-              <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-6xl">
+            <div className="flex justify-center items-center gap-3">
+              <h2 className="text-3xl text-principal2 font-pacifico md:text-2xl lg:text-5xl">
                 Shangrila
               </h2>
               <div>
                 <h3
-                  className="text-3xl text-textoPrincipal font-pacifico md:text-2xl lg:text-6xl"
+                  className="text-3xl text-textoPrincipal font-pacifico md:text-2xl lg:text-5xl"
                   style={{ color: "var(--letra3-cor)" }}
                 >
                   Residencial
@@ -79,10 +79,10 @@ export default function CardSobre({
         </div>
 
         {/* Conteúdo principal textual */}
-        <div className="relative z-10 text-textoPrincipal text-justify px-2 lg:px-12 w-full lg:max-w-[50%]">
+        <div className="relative z-10 text-textoPrincipal text-justify px-2 w-full">
           <h1
             id="section-title"
-            className="text-4xl md:text-3xl lg:text-3xl font-bold font-pacifico text-center"
+            className="text-4xl font-bold font-pacifico text-center"
           >
             {texto}
           </h1>

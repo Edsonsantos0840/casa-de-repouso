@@ -73,8 +73,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full mb-2 md:w-[90%] lg:w-[40%] lg:mx-auto p-4 lg:bg-textoPrincipal shadow-lg rounded-xl relative">
-      <h2 className="text-3xl font-bold text-center drop-shadow-lg mb-6 relative z-30 text-textoPrincipal lg:text-principal">
+    <div className="w-full mb-2 py-4 md:py-0 lg:mx-auto md:p-4 lg:bg-textoPrincipal shadow-lg rounded-xl relative">
+      <h2 className="text-3xl font-bold md:text-center drop-shadow-lg my-6 relative z-18 text-textoPrincipal lg:text-principal">
         Entre em Contato
       </h2>
 

@@ -59,7 +59,7 @@ export default function Home() {
             </span>
           </h2>
 
-          <div className="md:flex justify-between items-center flex-wrap lg:gap-4 m-auto mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 m-auto mt-12">
             {fieldInfo.map((field, i) => (
               <article key={i} className="text-center" aria-label={field.title}>
                 <field.ico
@@ -128,7 +128,7 @@ export default function Home() {
             Nossos Serviços
           </h2>
 
-          <div className="w-full md:flex flex-wrap justify-between items-center lg:gap-4 m-auto">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 ">
             {fieldInfMor.map((field, i) => (
               <article
                 key={i}

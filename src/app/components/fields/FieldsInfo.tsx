@@ -47,7 +47,7 @@ export const fieldInfo: FieldsInfoProps[] = [
     ico: RiMentalHealthFill,
     title: "Viver Com Dignidade.",
     paragraph:
-      "Na Shangrilá, cada detalhe foi pensado para proporcionar qualidade de vida, tranquilidade e bem-estar.",
+      "Na Shangrilá, cada detalhe foi pensado para proporcionar dignidade adequada, qualidade de vida, tranquilidade e bem-estar.",
     textHidden:
       "Aqui, os idosos não apenas vivem – vivem bem, com alegria e cuidado.",
     btn: "Ler",
@@ -57,7 +57,7 @@ export const fieldInfo: FieldsInfoProps[] = [
     ico: TbHealthRecognition,
     title: "De Portas Abertas.",
     paragraph:
-      "Venha nos visitar e conhecer de perto esse lar repleto de amor, Shangrilá Residencial para Idosos –",
+      "Venha nos visitar e conhecer de perto esse lar repleto de amor, Shangrilá Residencial para Idosos – trabalhando com carinho ",
     textHidden:
       "onde cada fase da vida merece ser vivida com carinho!",
     btn: "Ler",
@@ -67,7 +67,7 @@ export const fieldInfo: FieldsInfoProps[] = [
     ico: TbRibbonHealth,
     title: "Envelhecimento Ativo.",
     paragraph:
-      "Estímulo à autonomia e autoestima dos residentes, Rotina personalizada conforme as necessidades de cada idoso",
+      "Estímulo à autonomia e autoestima dos residentes, Rotina personalizada conforme as necessidades de cada idoso ",
     textHidden:
       "Convivência social que promove laços de amizade e afeto, Programas de bem-estar físico e emocional.",
     btn: "Ler",
