@@ -207,7 +207,7 @@ export default function Home() {
       </Container>
       {/* seção contato */}
       <section id="Contato" aria-labelledby="contatos-title" className="scroll-mt-20">
-        <CardContaççççççççççççççççççççççççççççççççççççççççççççççct
+        <CardContact
           image={images[2]}
           texto="Agende Uma Visita."
           descrição="A Casa de Repouso Shangri-lá se dedica a oferecer cuidado, conforto e qualidade de vida para idosos. Com duas unidades especialmente planejadas para atender às necessidades dos nossos residentes.
